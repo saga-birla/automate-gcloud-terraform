@@ -33,3 +33,6 @@ steps:
       - |
         terraform apply 
 
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+
