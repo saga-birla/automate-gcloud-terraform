@@ -10,7 +10,7 @@ steps:
       echo "***********"
   
   - id: 'tf init'
-    name: 'hashicorp/terraform:light'
+    name: 'hashicorp/terraform:latest'
     entrypoint: 'hashicorp/terraform:light'
     args:
     - "-c"
@@ -18,7 +18,7 @@ steps:
       terraform init
 
   - id: 'tf plan'
-    name: "hashicorp/terraform:light"
+    name: "hashicorp/terraform:latest"
     entrypoint: "bash"
     args:
       - "-c"
@@ -26,7 +26,7 @@ steps:
         terraform plan
 
   - id: 'tf apply'
-    name: "hashicorp/terraform:light"
+    name: "hashicorp/terraform:latest"
     entrypoint: "bash"
     args:
       - "-c"
