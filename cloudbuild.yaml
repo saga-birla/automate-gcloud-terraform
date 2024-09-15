@@ -1,3 +1,5 @@
+location: us-central1
+
 steps:
   - id: 'branch name'
     name: 'alpine'
@@ -35,4 +37,3 @@ steps:
 
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
-  location: us-central1
