@@ -31,7 +31,7 @@ steps:
     args:
       - "-c"
       - |
-        terraform apply 
+        terraform apply --auto-approve 
 
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
