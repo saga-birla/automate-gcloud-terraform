@@ -33,7 +33,7 @@ variable "network_type" {
 module "basic_vm" {
   source = "./module/basic_vm"
   image_name = var.image_name
-  instance_name = lookup(var.instance_name, terraform.workspace, "vm-demo")
+  instance_name = lookup(var.instance_name, terraform.workspace, "vm-default")
   machine_type = var.machine_type
   network_type = var.network_type
 
