@@ -11,7 +11,7 @@ steps:
   
   - id: 'tf init'
     name: 'hashicorp/terraform:latest'
-    entrypoint: 'hashicorp/terraform:light'
+    entrypoint: 'bash'
     args:
     - "-c"
     - |
