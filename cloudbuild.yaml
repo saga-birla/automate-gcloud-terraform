@@ -1,5 +1,3 @@
-location: us-central1
-
 steps:
   - id: 'branch name'
     name: 'alpine'
